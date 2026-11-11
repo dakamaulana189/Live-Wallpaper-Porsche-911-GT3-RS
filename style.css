@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #e8e8e8;
+}
+
+.wallpaper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  isolation: isolate;
+
+  background: linear-gradient(180deg,
+      #ffffff 0%,
+      #fafafa 28%,
+      #eeeeee 60%,
+      #c4c4c4 100%);
+}
+
+/* DIGITAL CLOCK */
+
+.clock {
+  position: absolute;
+  z-index: 1;
+
+  left: 50%;
+  top: 43%;
+
+  transform: translate(-50%, -50%);
+
+  width: max-content;
+  max-width: 95vw;
+
+  color: rgba(155, 155, 155, 0.43);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(150px, 16vw, 310px);
+  font-weight: 500;
+
+  line-height: 0.9;
+  letter-spacing: -0.065em;
+
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+.car-layer {
+  position: absolute;
+  z-index: 2;
+
+  display: block;
+
+  /* Ukuran berdasarkan lebar mobil yang terlihat */
+  width: 58.5vw;
+  height: auto;
+  max-height: none;
+
+  left: 50%;
+
+  /* Kompensasi ruang transparan PNG */
+  top: calc(43vh - 19.06vw);
+
+  bottom: auto;
+  transform: translateX(-50%);
+
+  object-fit: contain;
+
+
+  filter: drop-shadow(0px 9px 7px rgba(10, 15, 25, 0.30));
+
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.soft-ground {
+  position: absolute;
+  z-index: 1;
+
+  left: 19%;
+  width: 62%;
+
+  bottom: 25%;
+  height: 55px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(ellipse at center,
+      rgba(5, 8, 12, 0.75) 0%,
+      rgba(10, 15, 22, 0.55) 25%,
+      rgba(20, 25, 35, 0.30) 48%,
+      transparent 75%);
+
+  filter: blur(8px);
+
+  pointer-events: none;
+}
+
+/* Contact shadow kedua ban */
+.wheel-shadow {
+  position: absolute;
+  z-index: 1;
+
+  height: 22px;
+  border-radius: 50%;
+
+  background: radial-gradient(ellipse,
+      rgba(15, 18, 25, 0.78) 0%,
+      rgba(20, 25, 35, 0.48) 40%,
+      rgba(30, 35, 45, 0.16) 70%,
+      transparent 100%);
+
+  filter: blur(7px);
+  pointer-events: none;
+}
+
+.wheel-shadow.front {
+  width: 14%;
+  left: 25%;
+  bottom: 25%;
+}
+
+.wheel-shadow.rear {
+  width: 14%;
+  left: 60%;
+  bottom: 25%;
+}
+
+/* WIDE / ULTRAWIDE MONITORS */
+
+
+/* SMALLER SCREENS */

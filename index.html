@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eeeeee">
+  <title>Minimal Porsche Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="wallpaper" aria-label="Wallpaper jam digital dan mobil">
+    <div class="clock" aria-label="Jam digital">
+      <span id="clock">00:00</span>
+    </div>
+
+    <!--
+      Menggunakan mobil dari gambar referensi yang kamu unggah.
+      Clip-path mempertahankan area mobil dan membuang jam statis/background
+      dari gambar sumber. Jam real-time dibuat terpisah oleh JavaScript.
+    -->
+    <img class="car-layer" src="assets/porsche.png" alt="Mobil sport silver dari gambar referensi">
+
+    <div class="soft-ground" aria-hidden="true"></div>
+    <div class="wheel-shadow front"></div>
+    <div class="wheel-shadow rear"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
