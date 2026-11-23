@@ -22,8 +22,7 @@
 
   scheduleNextMinute();
 
-  // Lively Wallpaper dapat mengirim pesan pause/resume.
-  // Tidak ada animasi berat yang perlu berjalan di background.
+
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) updateClock();
   });
