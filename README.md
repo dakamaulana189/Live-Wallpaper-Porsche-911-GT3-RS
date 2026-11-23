@@ -1,6 +1,6 @@
 # Minimal Porsche Clock — Lively Wallpaper
 
-Wallpaper HTML/CSS/JS yang memakai gambar referensi yang kamu unggah sebagai sumber visual mobil.
+Live wallpaper yang menggunakan HTML/CSS/JS 
 
 ## Isi folder
 - `index.html` — struktur wallpaper
